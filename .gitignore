@@ -1,0 +1,22 @@
+# ── 运行产物（可随时重新生成）──
+# 约定：下划线开头 = 产物／临时件，mk_ 开头 = 生成器，candidates_*.json = 评测输入
+/tools/yuqing/eval/_*
+/tools/yuqing/eval/*.mjs
+/tools/yuqing/eval/*_result.json
+/tools/yuqing/eval/last_run.json
+/_judge_*.json
+/_audit_sources.json
+/判定报告_*.md
+
+# 显式保留
+!/tools/yuqing/eval/mk_*.cjs
+!/tools/yuqing/eval/mk_*.mjs
+!/tools/yuqing/eval/candidates_*.json
+
+# ── 通用 ──
+node_modules/
+*.tmp
+*.bak
+Thumbs.db
+desktop.ini
+.DS_Store
