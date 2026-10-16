@@ -1,0 +1,11 @@
+# 行尾符与二进制标注
+# 为什么要它：不做标注时，Windows 上提交会把行尾存成 CRLF，
+# Linux/macOS 用户克隆下来执行 .cjs 可能出问题。代码与文档统一 LF。
+* text=auto
+*.md   text eol=lf
+*.cjs  text eol=lf
+*.mjs  text eol=lf
+*.json text eol=lf
+*.txt  text eol=lf
+*.png  binary
+*.jpg  binary
